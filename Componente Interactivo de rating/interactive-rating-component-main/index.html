@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+  <!-- Rating state start -->
+  <div class="container">
+    <div class="card" id="card">
+      <div class="icon">
+        <img src="./images/icon-star.svg" />
+      </div>
+      <div class="card_title">
+        How did we do?
+      </div>
+      <div class="card_body">
+        <div class="card_content">
+          Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
+        </div>
+        <ul>
+          <button name="1" class="selection">1</button>
+          <button name="2" class="selection">2</button>
+          <button name="3" class="selection">3</button>
+          <button name="4" class="selection">4</button>
+          <button name="5" class="selection">5</button>
+        </ul>
+        <button onclick="send()">
+          SUBMIT
+        </button>
+      </div>
+    </div>
+
+    <!-- Thank you state start -->
+    <div class="thanks_card" id="thanks_card">
+      <div class="thanks_icon">
+        <img src="./images/illustration-thank-you.svg" />
+        <p>You selected
+          <!-- Add rating here --> out of <span id="puntuacion"></span>
+        </p>
+      </div>
+      <div class="thanks_head">
+        Thank you!
+      </div>
+      <div class="thanks_content">
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
+      </div>
+
+      <!-- Thank you state end -->
+
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/APEREZB26">APEREZB26</a>.
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
